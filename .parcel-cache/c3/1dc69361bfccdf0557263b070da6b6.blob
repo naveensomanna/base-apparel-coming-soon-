@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="fc2b4cb5b77166aa9d5f928727e91243">
+  <link rel="stylesheet" href="dc4e0b3f8816deb8a521afb9e7f1c70d">
+  <title>Base Apparel coming soon page</title>
+  
+</head>
+
+<body>
+  <section class="main__wrapper">
+    <header class="header_wrapper">
+      <picture>
+        <img src="c5f66617905de778e27b8022b5507943" alt="logo">
+      </picture>
+    </header>
+    <picture class="banner__hero" data-anim="">
+      <source media="(max-width: 899px)" srcset="d65f0d735d774d2e4fd6400871b54fcb">
+      <source media="(min-width: 900px)" srcset="3592012003cbf5d391af5bfcc8c9e773">
+      <img src="3592012003cbf5d391af5bfcc8c9e773" alt="female model" class="banner__hero-image">
+    </picture>
+    <div class="content">
+      <h1 class="content__title"><span class="content__title-we title__anim-1">We're</span> <br><span class="content__title-coming title__anim-2">coming </span><br><span class="content__title-coming title__anim-2">soon</span></h1>
+      <p class="content__description" data-anim=""> Hello fellow shoppers! We're currently building our new
+        fashion store. Add your email below to stay up-to-date with announcements
+        and our launch deals. Email Address</p>
+      <form action="#" id="emailform" class="content__form">
+        <input id="emialInput" placeholder="Email Address" class="content__input">
+        <button class="content_btn" type="submit" value="submit"></button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by
+      <a href="19eaf10265b4c947d08535dbae9dd09f" target="_blank">Frontend Mentor</a>. Coded by <a href="4314b8bc7ea75d3a65d369990d8fa1a3" target="_blank">Naveen</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
