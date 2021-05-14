@@ -1,0 +1,169 @@
+@use "abstract/variables";
+@use "base/reset";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: url(../images/bg-pattern-desktop.svg),
+    linear-gradient(variables.$gr-red-light);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main__wrapper {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 40px 0 100px 0;
+  @media (min-width: 901px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px auto;
+  }
+  .header_wrapper {
+    transform: scale(0.7);
+    justify-self: flex-start;
+    margin: 0 0 30px 0;
+    @media (min-width: 900px) {
+      margin: 60px 0 0 127px;
+      transform: scale(1);
+    }
+  }
+  .banner__hero {
+    align-self: center;
+    padding: 0 20px;
+    grid-row: span 2;
+    &-image {
+      @media (max-width: 1200px) {
+        width: 40vw;
+      }
+      @media (max-width: 900px) {
+        width: 100%;
+        margin: 0 0 66px 0;
+      }
+    }
+  }
+  [data-anim] {
+    animation: opacity 2000ms forwards;
+    animation-delay: 500ms;
+    opacity: 0;
+  }
+  .content {
+    text-align: center;
+    .content__title {
+      font-size: 2.5rem;
+      font-weight: variables.$fw-300;
+      text-transform: uppercase;
+      letter-spacing: 0.9rem;
+      color: variables.$red;
+      @media (min-width: 480px) {
+        font-size: 3rem;
+      }
+      &-coming {
+        color: variables.$dark-greyish-red;
+        font-weight: variables.$fw-400;
+      }
+    }
+    .title__anim-1 {
+      animation: textsFlow 1000ms forwards;
+      display: inline-block;
+    }
+    .title__anim-2 {
+      animation: textsFlow 1000ms forwards;
+      animation-delay: 250ms;
+      opacity: 0;
+      display: inline-block;
+    }
+    .title__anim-3 {
+      animation: textsFlow 1000ms forwards;
+      animation-delay: 500ms;
+      opacity: 0;
+      display: inline-block;
+    }
+    &__description {
+      color: variables.$red;
+      font-size: 0.98rem;
+      max-width: 90%;
+      margin: 24px auto;
+      line-height: 1.8;
+      letter-spacing: 0.01rem;
+    }
+    .content__form {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      .content__input {
+        background-color: transparent;
+        border-radius: 40px;
+        padding-left: 30px;
+        height: 50px;
+        width: 100%;
+        border: 1px solid variables.$greyish-red;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          font-family: "Josefin Sans", sans-serif;
+          color: variables.$red;
+          font-size: 1rem;
+        }
+      }
+      .content_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 40px;
+        width: 70px;
+        height: 100%;
+        background: linear-gradient(variables.$greyish-red-dark);
+        border: none;
+        transition: all 250ms ease-in;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          width: 80px;
+          opacity: 0.8;
+        }
+        &::before {
+          position: absolute;
+          top: 30%;
+          content: url("../images/icon-arrow.svg");
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes textsFlow {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

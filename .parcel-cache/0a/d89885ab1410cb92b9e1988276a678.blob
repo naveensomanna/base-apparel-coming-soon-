@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="47441c07904c31a480d7c91e0bb0735d">
+  <link rel="stylesheet" href="1456d0038d42b00e69054382179ac639">
+  <title>Base Apparel coming soon page</title>
+  
+</head>
+
+<body>
+  <section class="main__wrapper">
+    <header class="header_wrapper">
+      <picture>
+        <img src="0addecf49a9672b82359ecd3f0082a99" alt="logo">
+      </picture>
+    </header>
+    <picture class="banner__hero" data-anim="">
+      <source media="(max-width: 899px)" srcset="bda0d0230c19e3e415c4fd9f0070ec7b">
+      <source media="(min-width: 900px)" srcset="df657652df307fe26e4a43086b830b05">
+      <img src="df657652df307fe26e4a43086b830b05" alt="female model" class="banner__hero-image">
+    </picture>
+    <div class="content">
+      <h1 class="content__title"><span class="content__title-we title__anim-1">We're</span> <br><span class="content__title-coming title__anim-2">coming </span><br><span class="content__title-coming title__anim-2">soon</span></h1>
+      <p class="content__description" data-anim=""> Hello fellow shoppers! We're currently building our new
+        fashion store. Add your email below to stay up-to-date with announcements
+        and our launch deals. Email Address</p>
+      <form action="#" id="emailform" class="content__form">
+        <input id="emialInput" placeholder="Email Address" class="content__input">
+        <button class="content_btn" type="submit" value="submit"></button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by
+      <a href="1bc81a9847a1f7cbb1ca8393f2a022e5" target="_blank">Frontend Mentor</a>. Coded by <a href="49dd2af0c8db6a861b3a582e3ec685c3" target="_blank">Naveen</a>.
+    </p>
+  </footer>
+</body>
+
+</html><script src="202f65accccb6071212b96a1d3c27081"></script>
