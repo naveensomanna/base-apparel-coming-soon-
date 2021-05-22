@@ -137,6 +137,20 @@ body {
           content: url("../images/icon-arrow.svg");
         }
       }
+      &.content_invalid {
+        & > .content__input {
+          border: 1px solid variables.$soft-red;
+        }
+        & + .message__invalid {
+          visibility: visible;
+        }
+      }
+    }
+    .message__invalid {
+      visibility: hidden;
+      text-align: left;
+      color: variables.$soft-red;
+      margin: 0 0 0 70px;
     }
   }
 }

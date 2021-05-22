@@ -208,6 +208,18 @@ body {
   top: 30%;
   content: url("icon-arrow.8f9c79da.svg");
 }
+.main__wrapper .content .content__form.content_invalid > .content__input {
+  border: 1px solid #f96262;
+}
+.main__wrapper .content .content__form.content_invalid + .message__invalid {
+  visibility: visible;
+}
+.main__wrapper .content .message__invalid {
+  visibility: hidden;
+  text-align: left;
+  color: #f96262;
+  margin: 0 0 0 70px;
+}
 .footer {
   position: absolute;
   bottom: 0;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="/index.HASH_REF_6f662cc20c4556129faea69b41e4b3cf.css">
+  </head>
+  <body>
+    <section class="main__wrapper">
+      <header class="header_wrapper">
+        <picture> <img src="/logo.HASH_REF_92ef0a6b94569b6a419386db7071b2c9.svg" alt="logo"> </picture>
+      </header>
+      <picture class="banner__hero" data-anim="">
+        <source media="(max-width: 899px)" srcset="/hero-mobile.HASH_REF_b614ee0f61e7db23ca5b963c4dace6a0.jpg">
+        <source media="(min-width: 900px)" srcset="/hero-desktop.HASH_REF_2147bf42ed5cbe441cd7b79f8918e9c5.jpg">
+        <img src="/hero-desktop.HASH_REF_2147bf42ed5cbe441cd7b79f8918e9c5.jpg" alt="female model" class="banner__hero-image">
+      </picture>
+      <div class="content">
+        <h1 class="content__title">
+          <span class="content__title-we title__anim-1">We're</span> <br><span class="content__title-coming title__anim-2">coming </span><br><span class="content__title-coming title__anim-2">soon</span>
+        </h1>
+        <p class="content__description" data-anim="">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals. Email Address
+        </p>
+        <form action="#" id="emailform" class="content__form">
+          <input id="emialInput" placeholder="Email Address" class="content__input">
+          <button class="content_btn" type="submit" value="submit" id="btn"></button>
+        </form>
+        <p class="message__invalid">Please provide a valid email</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/naveensomanna" target="_blank">Naveen</a>.
+      </p>
+    </footer>
+    <script src="/index.HASH_REF_147c3be9838f78fc816d5dfc1397955d.js"></script>
+  </body>
+</html>
